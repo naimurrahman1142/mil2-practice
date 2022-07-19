@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hwb(0 100% 0%);
+}
+
+/* header style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 87px 120px 50px 120px;
+
+}
+
+.first-sight h2 {
+    font-size: 24px;
+}
+
+.second-sight ul {
+    float: right;
+    font-size: 16px;
+
+}
+
+.second-sight ul li {
+    list-style: none;
+    margin: 0% 20px;
+    display: inline-block;
+
+}
+
+/* banner style */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 133px;
+    padding: 80px 112px;
+}
+
+
+.banner-text {
+    font-size: 52px;
+
+}
+
+.banner-tittle p {
+    font-size: 16px;
+
+}
+
+.btn {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.banner-image {
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 414px;
+
+}
+
+/* banner style end */
+/* icon style start */
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 40px;
+    padding: 3px 100px;
+
+
+}
+
+.show {
+    margin: 30px 100px;
+}
+
+/* icon style ends */
+/* collection style starts */
+
+.popular-collection-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 100px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.collection-tittle {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.collection-box {
+    width: 329px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 17px 15px 38px 14px;
+    border-radius: 5px;
+}
+
+
+.collection-img {
+    width: 300px;
+    height: 256px;
+}
+
+.info-size {
+    font-size: 28px;
+
+}
+
+
+.fa-star {
+    color: #FB8200;
+}
+
+.fa-star-half-stroke {
+    color: #FB8200;
+}
+
+.size {
+    font-size: 14px;
+    color: #787885;
+    font-weight: 700;
+}
+
+.last {
+    float: right;
+    padding: 0px 100px;
+}
+
+.collection-last {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87);
+}
+
+/* collection style starts */
+@media only screen and (max-width:688px) {
+    .navbar {
+        flex-direction: row;
+
+    }
+
+    .container,
+    .icons,
+    .popular-collection-boxes {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
